@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 .container {
   background-color: transparent;
-  min-height: 100vh;
 }
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -16,15 +15,15 @@ body {
   padding-right: 5%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-  background-image: linear-gradient(#33006f, #4b0082);
+  background-image: linear-gradient(#15026b, #0214a3);
   text-align: justify;
 }
 a {
   text-decoration: none;
-  color: rgb(190, 119, 236);
+  color: rgb(0, 0, 0);
 }
 a:hover {
-  color: #b3bbb3;
+  color: #180ca5;
 }
 html {
   background-image: url("./s1.png");
@@ -41,7 +40,7 @@ h3 {
 }
 :root {
   --white: #fffafa;
-  --purple: #4b0082;
+  --purple: #15026b;
 }
 .container-part-section2 {
   display: grid;
@@ -51,6 +50,5 @@ h3 {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-
 
 
