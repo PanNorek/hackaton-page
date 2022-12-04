@@ -8,7 +8,7 @@ header{
     padding-top: 1.5%;      
     padding-bottom: 1.5%;
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 1% 99%;
     z-index: 99 !important;
 }
 .nav-top{
@@ -29,7 +29,7 @@ header{
     text-decoration: none;
     color: #535050;
     font-weight: bold;
-    overflow:hidden;
+    overflow: hidden;
     font-size: 1em;
 }
 
@@ -51,9 +51,6 @@ header{
 #image-logo{
     display: none;
 }
-#icon1, #icon2, #icon3, #icon4{
-    display: none;
-}
 @media screen and (max-width: 850px ){
     #image-logo {
         display: inline;
@@ -68,14 +65,6 @@ header{
     }
     #web-title{
         display: none;
-    }
-}
-@media screen and (max-width: 625px ){
-    #span1, #span2, #span3, #span4{
-        display: none;
-    }
-    #icon1, #icon2, #icon3, #icon4{
-        display: inline;
     }
 }
 @keyframes animation-show{
