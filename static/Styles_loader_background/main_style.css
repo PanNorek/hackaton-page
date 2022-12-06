@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 .container {
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -50,5 +50,3 @@ h3 {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-
-
