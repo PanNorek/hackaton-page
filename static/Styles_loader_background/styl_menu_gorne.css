@@ -24,8 +24,9 @@ html {
 }
 
 .logo {
+  font-size: 1.5rem;
   padding-left: 4px;
-  color: #ea4f4c;
+  color: #add7de;
   animation-name: animation-show;
   animation-duration: 4s;
 }
@@ -58,7 +59,7 @@ html {
 }
 
 .link:hover {
-  color: #eac7c7;
+  color: #add7de;
   letter-spacing: 0.05rem;
 }
 

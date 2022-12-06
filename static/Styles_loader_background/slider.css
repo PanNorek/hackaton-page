@@ -6,6 +6,7 @@
   -webkit-box-shadow: -1px 1px 1px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.2rem;
 }
 
 .slides:nth-child(even) > .slides-img {
@@ -14,6 +15,7 @@
 }
 
 .slides-img img {
+  vertical-align: middle;
   height: auto;
   width: auto;
   max-width: 20vw;
@@ -93,8 +95,4 @@
   background: var(--white);
   z-index: -2;
   filter: blur(35px);
-}
-
-#sekcja2 {
-  top: -120px;
 }
