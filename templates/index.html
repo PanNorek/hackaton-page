@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Rafał Zając, Rafał Nojek" />
     <meta name="keywords" content="Hackathon, programowanie" />
-    <meta name="description" content="Hack4WZ - maraton programowania wydziału zarządzania." />
+    <meta
+      name="description"
+      content="Hack4WZ - maraton programowania wydziału zarządzania."
+    />
     <link
       rel="icon"
       href="{{ url_for('static', filename='Images/mentor_logo.png') }}"
@@ -35,11 +38,11 @@
       media="screen"
       href="{{ url_for('static', filename='Styles_loader_background/landing-page.css') }}"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       media="screen"
       href="{{ url_for('static', filename='Styles_loader_background/loader.css') }}"
-    />
+    /> -->
     <link
       rel="stylesheet"
       media="screen"
@@ -76,7 +79,27 @@
 
   <body style="margin: 0px">
     <div id="loader"></div>
-    <header>
+
+    <div id="landing-page">
+      <img
+        src="https://www.delphix.com/sites/default/files/2017-10/istock-492045720.jpg"
+        alt="Hack4WZ_main_photo"
+      />
+    </div>
+
+    <nav class="navigationWrapper">
+      <div class="logoWrapper">
+        <span class="logo">Hack4WZ</span>
+      </div>
+      <ul class="navigation">
+        <li class="parent"><a class="link" href="#sekcja1">Opis</a></li>
+        <li class="parent"><a class="link" href="#sekcja2">Jury</a></li>
+        <li class="parent"><a class="link" href="#sekcja3">Partnerzy</a></li>
+        <li class="parent"><a class="link" href="#sekcja4">Regulamin</a></li>
+      </ul>
+    </nav>
+
+    <!-- <header>
       <div class="logo">
         <span id="web-title">Hack4WZ</span>
         <img
@@ -100,16 +123,12 @@
           <span id="span4">Regulamin</span>
         </a>
       </nav>
-    </header>
-    <div id="landing-page">
-      <img
-        src="https://www.delphix.com/sites/default/files/2017-10/istock-492045720.jpg"
-        alt="Hack4WZ_main_photo"
-      />
-    </div>
+    </header> -->
     <div class="container-main">
       <hr />
       <div class="container" id="sekcja1">
+        <br /><br /><br /><br />
+
         <h1>O wydarzeniu</h1>
         <h3>Pierwsze takie wydarzenie na Wydziale Zarządzania AGH</h3>
         <p>
@@ -121,7 +140,7 @@
           <b>Zadanie</b>, jakie będziecie mieli zrealizować, to stworzenie
           modelu predykcyjnego na podstawie wyselekcjonowanych przez nas danych.
           <br />
-          <b>Kiedy?</b> 13 styczeń 2023. Rozpoczniemy o godzinie 11:00, a
+          <b>Kiedy?</b> 13 stycznia 2023. Rozpoczniemy o godzinie 11:00, a
           zakończymy tego samego dnia o godzinie 23:59. <br />
           <b>Jak to działa?</b> Wraz z godziną 11:00 ogłosimy zadanie konkursowe
           oraz udostępnimy wam potrzebne dane. Na rozwiązanie problemu będziecie
@@ -147,6 +166,8 @@
         <hr />
       </div>
       <div class="container" id="sekcja2">
+        <br /><br /><br /><br />
+
         <h1>Jury</h1>
         <p>
           Poznaj członków Jury, którzy będą oceniać prace i spośród wszystkich
@@ -179,21 +200,74 @@
           </figure>
         </div>
         <hr />
+
         <div class="container" id="sekcja3">
+          <br /><br /><br /><br />
           <h1>Partnerzy pierwszej edycji</h1>
-          <hr style="visibility: hidden" />
-          <hr style="visibility: hidden" />
-          <div class="slides-container glow-frame">
+          <br /><br />
+
+          <!-- <div class="slides-container glow-frame"> -->
+          <div class="slides-container">
             <div class="slides fade">
-              <img src="{{ url_for('static', filename='Images/slide1.jpg') }}" alt="Maspex" style="width: 100%" />            
+              <div class="slides-img">
+                <img
+                  src="{{ url_for('static', filename='Images/slide1.jpg') }}"
+                  alt="Maspex"
+                />
+              </div>
+              <div class="slides-txt">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Laboriosam, enim quod? Eveniet ea architecto quis velit
+                  necessitatibus cumque a tempora, provident officiis
+                  perspiciatis, veniam eos rerum pariatur enim aut sequi,
+                  tempore esse. Cupiditate, praesentium commodi inventore beatae
+                  vero impedit veniam vitae eveniet explicabo laudantium
+                  dignissimos incidunt fugiat modi, id sunt!
+                </p>
+              </div>
             </div>
-            <a class="previous-button" onclick="changeSlides(-1)">&#10094;</a>
-            <a class="next-button" onclick="changeSlides(1)">&#10095;</a>
+            <div class="slides fade">
+              <div class="slides-img">
+                <img
+                  src="{{ url_for('static', filename='Images/linkedin.png') }}"
+                  alt="Maspex"
+                />
+              </div>
+              <div class="slides-txt">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam placeat odio eaque sint ipsam ipsa assumenda, totam
+                  tempore, rem illo iure, aspernatur ducimus aliquam delectus
+                  suscipit nesciunt reprehenderit soluta ipsum.
+                </p>
+              </div>
+            </div>
+            <div class="slides fade">
+              <div class="slides-img">
+                <img
+                  src="{{ url_for('static', filename='Images/mentor_logo.png') }}"
+                  alt="Maspex"
+                />
+              </div>
+              <div class="slides-txt">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  eius quos nemo, quia dolores, natus tempora commodi vero
+                  corrupti totam amet necessitatibus pariatur. Corporis dolores
+                  iusto ab necessitatibus blanditiis doloremque ratione id earum
+                  placeat possimus!
+                </p>
+              </div>
+            </div>
           </div>
-          <br /> <br />
+
+          <br /><br />
         </div>
         <hr />
         <div class="container" id="sekcja4">
+          <br /><br /><br /><br />
+
           <h1>Regulamin</h1>
           <div class="grid-container">
             <section id="main">
@@ -557,7 +631,9 @@
           src="{{ url_for('static', filename='Images/mentor_baner.jpg') }}"
           alt="Logo koła naukowego"
         />
-        <a href="https://www.facebook.com/groups/295643830927683/"> Koło naukowe </a>
+        <a href="https://www.facebook.com/groups/295643830927683/">
+          Koło naukowe
+        </a>
       </div>
     </div>
     <footer class="footer">
@@ -566,11 +642,14 @@
         <div class="container-contact" style="justify-items: center">
           <a
             href="https://www.linkedin.com/company/ko%C5%82o-naukowe-mentor/mycompany/"
-            ><img src="{{ url_for('static', filename='Images/linkedin.png') }}" alt="LinkedIn" style="height: 50px"
+            ><img
+              src="{{ url_for('static', filename='Images/linkedin.png') }}"
+              alt="LinkedIn"
+              style="height: 50px"
           /></a>
         </div>
       </div>
     </footer>
-    <script src="{{ url_for('static', filename='JS_files/slider.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='JS_files/slider.js') }}"></script> -->
   </body>
 </html>
