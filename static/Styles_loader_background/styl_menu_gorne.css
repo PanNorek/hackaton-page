@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-}
+  }
 
 header{
   font-family: "Lato", sans-serif;
@@ -69,23 +69,6 @@ header{
   color: #add7de;
   letter-spacing: 0.05rem;
 }
-
-/* @media screen and (max-width: 850px) {
-  #image-logo {
-    display: inline;
-    width: 55px;
-    height: 30px;
-  }
-  .logo {
-    position: relative;
-    animation-name: animation-show;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-  }
-  #web-title {
-    display: none;
-  }
-} */
 
 @keyframes animation-show {
   from {
