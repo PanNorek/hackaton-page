@@ -87,43 +87,19 @@
       />
     </div>
 
-    <nav class="navigationWrapper">
-      <div class="logoWrapper">
-        <span class="logo">Hack4WZ</span>
-      </div>
-      <ul class="navigation">
-        <li class="parent"><a class="link" href="#sekcja1">Opis</a></li>
-        <li class="parent"><a class="link" href="#sekcja2">Jury</a></li>
-        <li class="parent"><a class="link" href="#sekcja3">Partnerzy</a></li>
-        <li class="parent"><a class="link" href="#sekcja4">Regulamin</a></li>
-      </ul>
-    </nav>
-
-    <!-- <header>
-      <div class="logo">
-        <span id="web-title">Hack4WZ</span>
-        <img
-          onmouseover=""
-          id="image-logo"
-          alt="Logo-Mentor"
-          src="{{ url_for('static', filename='Images/mentor_logo.png') }}"
-        />
-      </div>
-      <nav class="nav-top">
-        <a id="button1" href="#sekcja1">
-          <span id="span1">Opis</span>
-        </a>
-        <a id="button2" href="#sekcja2">
-          <span id="span2">Jury</span>
-        </a>
-        <a id="button3" href="#sekcja3">
-          <span id="span3">Partnerzy</span>
-        </a>
-        <a id="button4" href="#sekcja4">
-          <span id="span4">Regulamin</span>
-        </a>
+    <header>
+      <nav class="navigationWrapper">
+        <div class="logoWrapper">
+          <span class="logo">Hack4WZ</span>
+        </div>
+        <ul class="navigation">
+          <li class="parent"><a class="link" href="#sekcja1">Opis</a></li>
+          <li class="parent"><a class="link" href="#sekcja2">Jury</a></li>
+          <li class="parent"><a class="link" href="#sekcja3">Partnerzy</a></li>
+          <li class="parent"><a class="link" href="#sekcja4">Regulamin</a></li>
+        </ul>
       </nav>
-    </header> -->
+    </header>
     <div class="container-main">
       <hr />
       <div class="container" id="sekcja1">
@@ -156,10 +132,12 @@
         <div class="pictures">
           <img
             class="pic1"
-            src="https://www.zarz.agh.edu.pl/wp-content/uploads/2016/09/logo_poziom.png"
-            alt="Logo wydziału"
+            src="{{ url_for('static', filename='Images/mentor_baner.jpg') }}"
+            alt="Logo koła naukowego"
           />
-          <a href="https://www.zarz.agh.edu.pl/"> Strona wydziału </a>
+          <a href="https://www.facebook.com/groups/295643830927683/">
+            Koło naukowe
+          </a>
         </div>
         <br />
         <br />
@@ -189,12 +167,12 @@
           <figure class="Jury">
             <img
               class="pic4"
-              src="https://assets.mitsmr.pl/f/person/NfiDr0hmc/photo/slCygGZFechBlzocEDBjEO4ecEGRKW56.jpg"
+              src="{{ url_for('static', filename='Images/programmerIcon.png') }}"
               alt="dr hab. prof. AGH Jerzy Duda"
             />
             <figcaption>
-              dr hab. inż. Jerzy Duda <br />
-              Profesor w Katedrze <br />Informatyki Biznesowej <br />i
+              <b>mgr. Tomasz Wieroński </b><br />
+              asystent badawczo-dydaktyczny <br /> w Katedrze Informatyki Biznesowej <br />i
               Inżynierii Zarządzania<br />na Wydziale Zarządzania AGH.
             </figcaption>
           </figure>
@@ -205,13 +183,11 @@
           <br /><br /><br /><br />
           <h1>Partnerzy pierwszej edycji</h1>
           <br /><br />
-
-          <!-- <div class="slides-container glow-frame"> -->
           <div class="slides-container">
             <div class="slides fade">
               <div class="slides-img">
                 <img
-                  src="{{ url_for('static', filename='Images/slide1.jpg') }}"
+                  src="{{ url_for('static', filename='Images/maspex.png') }}"
                   alt="Maspex"
                 />
               </div>
@@ -230,24 +206,8 @@
             <div class="slides fade">
               <div class="slides-img">
                 <img
-                  src="{{ url_for('static', filename='Images/linkedin.png') }}"
-                  alt="Maspex"
-                />
-              </div>
-              <div class="slides-txt">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam placeat odio eaque sint ipsam ipsa assumenda, totam
-                  tempore, rem illo iure, aspernatur ducimus aliquam delectus
-                  suscipit nesciunt reprehenderit soluta ipsum.
-                </p>
-              </div>
-            </div>
-            <div class="slides fade">
-              <div class="slides-img">
-                <img
-                  src="{{ url_for('static', filename='Images/mentor_logo.png') }}"
-                  alt="Maspex"
+                  src="{{ url_for('static', filename='Images/WZ.jpg') }}"
+                  alt="Wydział Zarządzania"
                 />
               </div>
               <div class="slides-txt">
@@ -625,20 +585,10 @@
           </div>
         </div>
       </div>
-      <div class="pictures">
-        <img
-          class="pic1"
-          src="{{ url_for('static', filename='Images/mentor_baner.jpg') }}"
-          alt="Logo koła naukowego"
-        />
-        <a href="https://www.facebook.com/groups/295643830927683/">
-          Koło naukowe
-        </a>
-      </div>
     </div>
     <footer class="footer">
       <div class="container-footer">
-        <span> KN Mentor, 2022 &copy;. All rights reserved.</span>
+        <p id="rights"> KN Mentor, 2022 &copy;. All rights reserved.</p>
         <div class="container-contact" style="justify-items: center">
           <a
             href="https://www.linkedin.com/company/ko%C5%82o-naukowe-mentor/mycompany/"
